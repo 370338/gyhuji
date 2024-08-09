@@ -1,0 +1,5 @@
+.art-page {
+    background-color: rgb(230, 173, 224); /* Change this to the desired color */
+    min-height: 100vh; /* Ensure the background color covers the entire viewport */
+    padding: 20px; /* Add some padding for content */
+}

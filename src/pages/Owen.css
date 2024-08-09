@@ -1,0 +1,72 @@
+
+.owen-page {
+    background-color: rgb(0, 0, 0); 
+    min-height: 100vh; 
+    padding: 20px; 
+}
+
+/* OwenPage.css */
+.owen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
+    padding: 20px;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .owen-image {
+    width: 444px; /* Adjust as needed */
+    height: auto;
+    /*border-radius: 50%;*/
+    /*border: 2px solid #ccc;*/
+  }
+  
+  .bio-container {
+    margin-top: 20px;
+    /*text-align: center;*/
+    max-width: 600px; /* Adjust as needed */
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .bio-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .bio-container p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+/* ######### */
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .owen-container {
+      padding: 10px;
+    }
+  
+    .owen-image {
+      width: 150px; /* Smaller image on mobile */
+    }
+  
+    .bio-container {
+      max-width: 100%;
+    }
+  
+    .bio-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .bio-container p {
+      font-size: 1em;
+    }
+  }
+
+  
