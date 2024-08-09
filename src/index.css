@@ -5,7 +5,13 @@ body, html {
     padding: 0;
     font-family: 'Spinnaker', sans-serif;
     /*background-color: blue;*/
-    background: repeating-conic-gradient(#ffffff 0 .00005%,#000000 0 .00017%) 0 0/5000px 10000px
+    background: repeating-conic-gradient(#ffffff 0 .00005%,#000000 0 .00017%) 0 0/5000px 10000px;
+
+    /* trying to fix the gradient going away on actual mobile phone*/
+
+    height: 100%;
+    width: 100%;
+    /*background-size: cover;*/
   }
   
   #root {
@@ -13,4 +19,14 @@ body, html {
     flex-direction: column;
     min-height: 100vh;
   }
+
+  /* mobile size to be sure */
+
+  @media (max-width: 767px) {
+    body, html {
+      background: repeating-conic-gradient(#ffffff 0 .00005%,#000000 0 .00017%) 0 0/5000px 10000px;
+      /*background-size: cover;*/
+    }
+  }
+  
   
