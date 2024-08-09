@@ -241,7 +241,7 @@ const Navbar = () => {
           </Link>
         </button>
         <button className="subnav-btn" onClick={closeNavbar}>
-          <a href="/images/The_OwenBeedle_Resume.pdf" target="_blank">
+          <a href="./images/The_OwenBeedle_Resume.pdf" target="_blank">
             <img src="./images/labels/RESUME3x5_2.png" alt="RESUME" />
           </a>
         </button>
