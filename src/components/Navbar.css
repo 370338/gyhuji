@@ -132,12 +132,13 @@
   .logo-btn{
     width: 100%;
     height: 100%;
-    margin-bottom: -3.5px;
+    /*margin-bottom: -1px;*/
   }
 
   .logo-btn img {
     width: 100%;
     height: 100%;
+    margin-bottom: -3.5px;
   }
 
   .nav-btn img {
