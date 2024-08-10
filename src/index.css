@@ -17,10 +17,11 @@ body, html {
     height: 100%;
     width: 100%;
     */
-    overflow: hidden; /* Prevent scrolling */
+    /*overflow: hidden;*/ /* Prevent scrolling */
     /*background-size: cover;*/
   }
 
+  /* for conway background */
   canvas {
     position: absolute;
     top: 0;
