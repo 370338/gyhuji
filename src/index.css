@@ -4,7 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Spinnaker', sans-serif;
-    background-color: green;
+    /*background-color: green;*/
     /*background: repeating-conic-gradient(#ffffff 0 .00005%,#000000 0 .00017%) 0 0/5000px 10000px;*/
 
     /*
@@ -13,16 +13,29 @@ body, html {
     background: repeating-conic-gradient(#ffffff 0 .00005%, #000000 0 .00017%) 0 0/5000px 10000px;
     */
     /* trying to fix the gradient going away on actual mobile phone*/
-
+    /*
     height: 100%;
     width: 100%;
+    */
+    overflow: hidden; /* Prevent scrolling */
     /*background-size: cover;*/
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind all other elements */
   }
   
   #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    z-index: 1; /* Place above the canvas */
   }
 
   /* mobile size to be sure */
