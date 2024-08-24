@@ -1,17 +1,31 @@
-import React from "react";
+//import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+//import GameOfLife from "./gameOfLife"; // Assuming GameOfLife is your component
+import GameOfLife from "./GameOfLife";
+
 import Navbar from "./components/Navbar";
 import Owen from "./pages/Owen";
 import Art from "./pages/Art";
 import Design from "./pages/Design";
 //import Resume from "./pages/Resume";
 
-const App = () => {
+//const App = () => {
+function App() {
+  const [gameKey, setGameKey] = useState(0);
+
+  const handleResetGameOfLife = () => {
+    setGameKey((prevKey) => prevKey + 1);
+  };
+
   return (
     <Router>
-      <Navbar />
+      <Navbar handleResetGameOfLife={handleResetGameOfLife} />
+      {/*<Navbar />*/}
       <Routes>
         {/*<Route path="/" element={<Home />} />*/}
+        <Route path="/" element={<GameOfLife key={gameKey} />} />
+
         <Route path="/about/owen" element={<Owen />} />
         <Route path="/works/art" element={<Art />} />
         <Route path="/works/design" element={<Design />} />
@@ -20,7 +34,7 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 /*
 const Home = () => (
