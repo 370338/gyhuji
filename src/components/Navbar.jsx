@@ -247,7 +247,7 @@ const Navbar = ({ handleResetGameOfLife }) => {
           closeNavbar();
         }}
       >
-        <Link to="/">
+        <Link to="/gyhuji/">
           <img src={logo} alt="HOME" />
         </Link>
       </button>
@@ -258,7 +258,7 @@ const Navbar = ({ handleResetGameOfLife }) => {
       </button>
       <div className={`subnav ${isOpen.about ? "active" : ""}`}>
         <button className="subnav-btn" onClick={closeNavbar}>
-          <Link to="/about/owen">
+          <Link to="/gyhuji/about/owen">
             <img src={owenAboutImg} alt="OWEN" />
           </Link>
         </button>
@@ -276,13 +276,13 @@ const Navbar = ({ handleResetGameOfLife }) => {
       </button>
       <div className={`subnav ${isOpen.works ? "active" : ""}`}>
         <button className="subnav-btn" onClick={closeNavbar}>
-          <Link to="/works/art">
+          <Link to="/gyhuji/works/art">
             <img src={artWorksImg} alt="ART" />
           </Link>
         </button>
 
         <button className="subnav-btn" onClick={closeNavbar}>
-          <Link to="/works/design">
+          <Link to="/gyhuji/works/design">
             <img src={designWorksImg} alt="DESIGN" />
           </Link>
         </button>

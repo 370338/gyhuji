@@ -24,11 +24,11 @@ function App() {
       {/*<Navbar />*/}
       <Routes>
         {/*<Route path="/" element={<Home />} />*/}
-        <Route path="/" element={<GameOfLife key={gameKey} />} />
+        <Route path="/gyhuji/" element={<GameOfLife key={gameKey} />} />
 
-        <Route path="/about/owen" element={<Owen />} />
-        <Route path="/works/art" element={<Art />} />
-        <Route path="/works/design" element={<Design />} />
+        <Route path="/gyhuji/about/owen" element={<Owen />} />
+        <Route path="/gyhuji/works/art" element={<Art />} />
+        <Route path="/gyhuji/works/design" element={<Design />} />
         {/*<Route path="/about/resume" element={<Resume />} />*/}
         {/* Add more routes as needed */}
       </Routes>
