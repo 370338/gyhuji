@@ -29,6 +29,7 @@
   .navbar:not(.expanded) {
 
     height: 58.333px; /* Collapsed state height (only the logo button) */
+    
   }
   
   /* Logo button */
