@@ -1,19 +1,4 @@
-/*
-import React from "react";
-import "./Owen.css"; // Import the CSS file
-
-const Owen = () => {
-  return (
-    <div className="owen-page">
-      <h1>Owen's Page</h1>
-      <p>Welcome to Owen's page!</p>
-    </div>
-  );
-};
-
-export default Owen;
-*/
-// OwenPage.jsx
+// Owen.jsx
 import React from "react";
 import "./Owen.css";
 import owenImage from "/images/Owen_Bio_Half2.png"; // Ensure you have an image file named owen.jpg in the public/images directory

@@ -37,7 +37,8 @@ const GameOfLife = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
-          ctx.fillStyle = grid[row][col] ? "#FEE11A" : "#007030";
+          //ctx.fillStyle = grid[row][col] ? "#FEE11A" : "#007030";
+          ctx.fillStyle = grid[row][col] ? "#00883A" : "#007030";
           ctx.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
         }
       }
@@ -83,7 +84,7 @@ const GameOfLife = () => {
     }
 
     // Slow down the game loop by setting an interval (e.g., 123 milliseconds)
-    const intervalId = setInterval(gameLoop, 123);
+    const intervalId = setInterval(gameLoop, 200);
 
     // Initial draw
     drawGrid(grid);

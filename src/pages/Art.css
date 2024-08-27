@@ -51,8 +51,8 @@
   .modal-content {
     margin: auto;
     display: block;
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 70%;
+    max-height: 70%;
     margin-top: 5%;
     /*margin-left: 5%;*/
     box-shadow: 0px 8px 10px 2px #111111;
@@ -116,11 +116,11 @@
   
     .caption {
       width: 90%;
-      margin-top: 10px; 
+      margin-top: 50px; 
       padding: 10px;
       background-color: rgba(255, 255, 255, 0.8); 
       color: #000; 
-      max-width: 90%;
+      max-width: 70%;
     }
   }
   

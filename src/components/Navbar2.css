@@ -1,0 +1,226 @@
+/* General reset and styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px; /* Width of the navbar when expanded */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden; /* 3*/
+
+    transition: all 0.8s ease-in-out;
+
+    height: 100%; /* 3*/
+
+  }
+  /*
+  .navbar:not(.expanded) {
+    width: 70px; 
+  }*/
+  .navbar:not(.expanded) {
+
+    height: 58.333px; /* Collapsed state height (only the logo button) */
+  }
+  
+  /* Logo button */
+  .logo-btn {
+    /*width: 350px;*/ /* Keep the size same as expanded */
+
+    height: 58.333px; /* Adjust height for the button */
+    /*height: 100%;*/
+    border: none;
+    background-color: inherit;
+
+    /*cursor: pointer;*/
+  }
+  
+  .logo-btn img {
+    width: 100%;
+    height: 100%;
+    /*height: auto;*/
+  }
+  
+  .logo-btn:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Hover effect */
+  }
+  
+  /* Main navigation buttons */
+  .nav-btn {
+    width: 100%;
+    height: 58.333px; /* Adjust for button height */
+    padding: 0;
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    color: white;
+
+    /*cursor: pointer;*/
+  }
+  
+  .nav-btn img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Hover effect */
+  }
+  
+  /* Subnavigation menu */
+  .subnav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Subnavigation buttons */
+  .subnav-btn {
+    color: white;
+    width: 100%;
+    height: 58.333px; /* Adjust for button height */
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .subnav-btn img {
+    width: 100%;
+    height: auto;
+  }
+  
+.subnav-btn:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Hover effect */
+}
+/*#######*/
+  
+/* Subnavigation active state */
+/* Subnav active state */
+.subnav.active {
+    max-height: 300px; /* Adjust as needed for all subnav items */
+    transition-timing-function: ease-in;
+    
+}
+  
+.subnav.active .subnav-btn {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.subnav:not(.active) .subnav-btn {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition-delay: 0s;
+}
+  
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .navbar {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-btn,
+    .subnav-btn {
+      width: 100%;
+      height: auto;
+    }
+  
+    .subnav {
+      max-height: 0; /* Ensure dropdowns are collapsed by default */
+      overflow: hidden; /* Hide overflow content */
+    }
+  
+    .logo-btn {
+      width: 100%;
+      height: auto;
+    }
+  
+    .logo-btn img {
+      width: 100%;
+      height: auto;
+      margin-bottom: -3.5px;
+    }
+  
+    .nav-btn img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: -3.5px;
+    }
+  
+    .subnav-btn img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: -3.5px;
+    }
+  }
+
+/*
+@media (max-width: 767px) {
+    .navbar {
+      width: 100%;
+      flex-direction: row;  
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.8); 
+      padding: 10px; 
+    }
+  
+    .navbar:not(.expanded) {
+      width: 70px; 
+    }
+  
+    .nav-btn,
+    .subnav-btn {
+      width: auto; 
+      height: auto; 
+      padding: 10px; 
+    }
+  
+    .subnav {
+      flex-direction: row; 
+      max-height: 0; 
+      overflow: hidden; 
+    }
+  
+    .logo-btn {
+      width: 100%;
+      height: auto; 
+      margin-bottom: 0;
+    }
+  
+    .logo-btn img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .nav-btn img,
+    .subnav-btn img {
+      width: auto;
+      height: 100%;
+    }
+  
+    .subnav.active {
+      max-height: 100%; 
+      flex-direction: column;
+    }
+}
+*/
+  
+  

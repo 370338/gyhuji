@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import GameOfLife from "./gameOfLife"; // Assuming GameOfLife is your component
 import GameOfLife from "./GameOfLife";
 
-import Navbar from "./components/Navbar";
+import Navbar2 from "./components/Navbar2";
 import Owen from "./pages/Owen";
 import Art from "./pages/Art";
 import Design from "./pages/Design";
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar handleResetGameOfLife={handleResetGameOfLife} />
+      <Navbar2 handleResetGameOfLife={handleResetGameOfLife} />
       {/*<Navbar />*/}
       <Routes>
         {/*<Route path="/" element={<Home />} />*/}
