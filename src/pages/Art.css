@@ -1,11 +1,21 @@
 /* Gallery container */
 
 .gallery-container {
-    background-color: #d88fff; 
+  background-image: url('/images/Bricks_3.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.2); /* A light overlay with 80% opacity */
+  background-blend-mode: overlay;
+
+
+    /*background-color: #d88fff; */
     padding: 20px;
-    min-height: 100vh; 
+    min-height: 100vh;
     
 }
+
+
 
 .gallery {
     display: flex;
@@ -25,6 +35,8 @@
     max-width: 100%;
     max-height: 200px;
     transition: transform 0.3s;
+
+    box-shadow: 0px 8px 10px 2px #111111;
   }
   
   .art-container:hover img {
@@ -46,6 +58,8 @@
 
     justify-content: center;
     align-items: center;
+
+    
   }
   
   .modal-content {
@@ -53,7 +67,8 @@
     display: block;
     max-width: 70%;
     max-height: 70%;
-    margin-top: 5%;
+    /*margin-top: 10%;*/
+    
     /*margin-left: 5%;*/
     box-shadow: 0px 8px 10px 2px #111111;
   }
